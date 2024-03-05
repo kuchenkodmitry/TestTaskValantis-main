@@ -1,0 +1,7 @@
+.contentFlex{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 1500px;
+    margin: 50px auto;
+}

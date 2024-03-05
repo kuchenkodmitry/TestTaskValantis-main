@@ -1,0 +1,41 @@
+.submitBtn {
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: -4px 4px 0px 0px rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    gap: 15px;
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.lblinput {
+    width: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.filterBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(40, 129, 123);
+    background: linear-gradient(90deg, rgba(40, 129, 123, 1) 0%, rgba(17, 47, 110, 1) 50%, rgba(7, 13, 54, 1) 100%);
+    width: fit-content;
+    color: white;
+    height: 480px;
+    padding: 0 30px;
+    border-radius: 15px;
+    box-shadow: 10px 11px 22px -18px #74a6fb;
+    gap: 40px
+}
+
+.filterPost {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
