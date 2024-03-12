@@ -25,7 +25,7 @@ function ResponsiveAppBar() {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     const refPrice = React.useRef()
 
-    
+
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -44,9 +44,10 @@ function ResponsiveAppBar() {
 
     return (
         <AppBar position="fixed">
-            <Container maxWidth="lg">
-                <Toolbar disableGutters>
-                    <ShoppingBasketIcon sx={{ fontSize: "35px", display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <Container maxWidth="xll">
+                <Toolbar sx={{display: "flex" , justifyContent: "space-between"}} disableGutters>
+                    <div style={{ display: 'flex', alignItems:"center"}}>
+                    <ShoppingBasketIcon sx={{ fontSize: "35px", display: 'flex', mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -62,64 +63,27 @@ function ResponsiveAppBar() {
                     >
                         Тестовое здание VK - React корзина
                     </Typography>
-
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <AddShoppingCartIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                        </Menu>
-                    </Box>
-                    <ShoppingBasketIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
-                        variant="h5"
+                        variant="h6"
                         noWrap
                         component="a"
                         href="#app-bar-with-responsive-menu"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
+                            fontWeight: 600,
                             color: 'inherit',
                             textDecoration: 'none',
+                            width: "15 0px"
                         }}
                     >
-                        LOGO
+                        React корзина
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                    </Box>
-
+                    </div>
                     <Box sx={{ borderRadius: 0, flexGrow: 0 }}>
                         <Tooltip title="Открыть корзину">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Typography sx={{ color: "white", padding: '0px 10px' }}>Открыть корзину</Typography>
+                                <Typography sx={{ color: "white", padding: '0px 10px' }}>Корзина</Typography>
                                 <AddShoppingCartIcon sx={{
                                     color: "white",
                                     fontSize: '40px'
@@ -143,11 +107,11 @@ function ResponsiveAppBar() {
                             onClose={handleCloseUserMenu}
                         >
                             <Typography >
-                                        <div className={s.aboutCart}>
-                                        <p>Количество товаров в корзине: {products.cart.addedProducts.reduce((sum, obj) => obj.count + sum, 0)}</p>
-                                        <p>Итоговая стоимость: {products.cart.result}</p>
-                                        </div>
-                                        
+                                <div className={s.aboutCart}>
+                                    <p>Количество товаров в корзине: {products.cart.addedProducts.reduce((sum, obj) => obj.count + sum, 0)}</p>
+                                    <p>Итоговая стоимость: {products.cart.result}</p>
+                                </div>
+
                                 {
                                     isLoading ? <div>{products.cart.length}</div> : <div className={s.cartBlock}>
                                         {products.cart.addedProducts.map((e, i) => {
@@ -164,37 +128,37 @@ function ResponsiveAppBar() {
                                                             gap: '10px',
                                                             alignItems: "center"
                                                         }}>
-                                                            Количество товара:  
+                                                            Количество товара:
                                                             <IconButton
-                                                            onClick={() => {
-                                                                dispatch(increment(e.id))
-                                                            }}
+                                                                onClick={() => {
+                                                                    dispatch(increment(e.id))
+                                                                }}
                                                                 sx={{
                                                                     border: '1px solid',
                                                                     borderRadius: '5px',
                                                                     padding: "0px 5px"
                                                                 }}>+</IconButton>
-                                                                  {e.count}
-                                                                 <IconButton 
-                                                                 onClick={() => {
+                                                            {e.count}
+                                                            <IconButton
+                                                                onClick={() => {
                                                                     dispatch(decrement(e.id))
-                                                                 }}
-                                                                 sx={{
+                                                                }}
+                                                                sx={{
                                                                     border: '1px solid',
                                                                     borderRadius: '5px',
                                                                     padding: "0px 10px"
                                                                 }}>-</IconButton>
-                                                                <Button
+                                                            <Button
                                                                 onClick={() => {
                                                                     dispatch(deletProduct(e.id))
                                                                 }}
-                                                                >Удалить</Button>
+                                                            >Удалить</Button>
                                                         </p>
                                                     </div>
                                                 </div>
                                             )
                                         })}
-                                        
+
                                     </div>
                                 }
                             </Typography>

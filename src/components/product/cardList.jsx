@@ -10,7 +10,7 @@ function CardList() {
 
 return (
         <div className={s.positonSection}>
-            <Typography variant="h4" gutterBottom>
+            <Typography className={s.title} variant="h4" gutterBottom>
                 Список товаров:
             </Typography>
         <div className={s.cardListSection}>

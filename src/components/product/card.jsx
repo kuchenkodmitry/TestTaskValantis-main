@@ -14,7 +14,7 @@ const { count } = product.rating
 const dispatch = useDispatch()
 
   return (
-    <Card sx={{ maxWidth: 345, position: "relative" }}>
+    <Card sx={{ maxWidth: 500, position: "relative" }}>
       <CardMedia
         sx={{ height: 140 }}
         image={image}

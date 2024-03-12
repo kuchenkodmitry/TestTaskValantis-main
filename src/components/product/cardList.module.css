@@ -1,12 +1,54 @@
-.cardListSection{
-    width: 1200px;
+.cardListSection {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px
+    gap: 30px;
+    padding: 0 50px;
 }
-.positonSection{
-    width: 1200px;
-    margin: 100px auto 0;
-    
+.title{
+    padding: 0 60px;
+}
+.positonSection {
+    width: 75%;
+    margin: 0 auto 0;
+
+}
+
+@media screen and (max-width : 1024px) {
+    .cardListSection {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 00px;
+    }
+
+    .positonSection {
+        width: 90%;
+        margin: 0 auto 0;
+
+    }
+    .title{
+        padding: 0 0px;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .cardListSection {
+        display: flex;
+        flex-direction: column;
+        padding: 0 00px;
+    }
+
+    .positonSection {
+        width: 90%;
+        margin: 0 auto 0;
+
+    }
+    .title{
+        padding: 0 0px;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 }
