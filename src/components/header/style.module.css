@@ -1,0 +1,15 @@
+.productCard{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+    height: 145px;
+    padding: 0 20px;
+}
+.cartBlock{
+    width: 600px;
+}
+.aboutCart{
+    width: 530px;
+    margin: 10px auto 40px;
+}
