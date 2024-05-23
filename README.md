@@ -1,28 +1,48 @@
-#TestTaskValantis-main
+# TestTaskValantis
 
-Тестовое задание на вакансию Frontend разработчик в компанию Valantis
+![React](https://img.shields.io/badge/React-18.0.0-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+![CSS](https://img.shields.io/badge/CSS-Modules-green)
+![License](https://img.shields.io/github/license/kuchenkodmitry/TestTaskValantis-main)
+
+## Описание проекта
+
+TestTaskValantis - это веб-приложение, созданное с использованием React, которое включает в себя функциональность корзины покупок. Проект использует REST API для добавления и удаления товаров, а также для реализации фильтров и карточек товаров.
+
+## Функциональность
+
+- **Корзина покупок**: Добавление и удаление товаров, управление количеством.
+- **Запросы REST API**: Получение данных о товарах, добавление и удаление товаров из корзины.
+- **Фильтры**: Возможность фильтрации товаров по различным параметрам.
+- **Карточки товаров**: Отображение товаров с детальной информацией.
 
 ## Технологии
-![React](https://img.shields.io/badge/-React-61daf8?logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?logo=javaScript&logoColor=black)
-![Webpack](https://img.shields.io/badge/-Webpack-99d6f8?logo=webpack&logoColor=black)
-![API](https://img.shields.io/badge/-api-yellow)
 
-## Запуск проекта
+- **React**: Библиотека для построения пользовательских интерфейсов.
+- **React Router**: Для маршрутизации внутри приложения.
+- **CSS Modules**: Стилизация компонентов.
+- **Axios**: Для запросов к API.
+- **Jest**: Для модульного тестирования.
 
-Для запуска проекта необходимо выполнить следующие действия:
+## Установка и запуск
 
-1. Склонировать проект на ваш компьютер с [Github](https://github.com/kuchenkodmitry/TestTaskValantis-main) с помощью команды:
-```
-git clone https://github.com/kuchenkodmitry/TestTaskValantis-main.git
-```
-2. Установить зависимости:
-```
-npm install
-```
-3. Запустить проект:
-```
-npm start
-```
+1. **Клонирование репозитория**
+
+    ```sh
+    git clone https://github.com/kuchenkodmitry/TestTaskValantis-main.git
+    cd TestTaskValantis-main
+    ```
+
+2. **Установка зависимостей**
+
+    ```sh
+    npm install
+    ```
+
+3. **Запуск приложения**
+
+    ```sh
+    npm start
+    ```
+
+    Приложение будет доступно по адресу `http://localhost:3000`.
