@@ -3,7 +3,6 @@
 ![React](https://img.shields.io/badge/React-18.0.0-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
 ![CSS](https://img.shields.io/badge/CSS-Modules-green)
-![License](https://img.shields.io/github/license/kuchenkodmitry/TestTaskValantis-main)
 
 ## Описание проекта
 
