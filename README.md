@@ -1,6 +1,6 @@
 #TestTaskValantis-main
 
-Тестовое задание на вакансию Frontend разработчик в vk.com 
+Тестовое задание на вакансию Frontend разработчик в компанию Valantis
 
 ## Технологии
 ![React](https://img.shields.io/badge/-React-61daf8?logo=react&logoColor=black)
